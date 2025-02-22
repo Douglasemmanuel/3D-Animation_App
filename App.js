@@ -4,9 +4,9 @@ import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { Suspense } from 'react';
 import { useGLTF } from '@react-three/drei/native'
 import { WomanAvatar } from './components/WomanAvatar';
-// import useControls from "r3f-native-orbitcontrols";
+import useControls from "r3f-native-orbitcontrols";
 export default function App() {
-  // const [OrbitControls, events] = useControls();
+  const [OrbitControls, events] = useControls();
   return (
     <SafeAreaView style={{flex:1}}>
     <View style={styles.container}>
